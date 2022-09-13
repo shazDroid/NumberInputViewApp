@@ -11,5 +11,10 @@
             <enum name="point" value="1" />
         </attr>
         <attr name="defaultValue" format="string"/>
+        <attr name="titleTextSize" format="dimension"/>
+        <attr name="numberTextSize" format="dimension"/>
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="strokeRadius" format="dimension" />
+        <attr name="strokeColor" format="color|reference" />
     </declare-styleable>
 </resources>

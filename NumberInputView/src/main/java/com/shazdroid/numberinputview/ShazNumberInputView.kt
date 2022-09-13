@@ -2,6 +2,12 @@ package com.shazdroid.numberinputview
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.graphics.Canvas
+import android.graphics.Color
+import android.graphics.drawable.GradientDrawable
+import android.graphics.drawable.ShapeDrawable
+import android.graphics.drawable.shapes.OvalShape
+import android.graphics.drawable.shapes.RectShape
 import android.text.InputType
 import android.util.AttributeSet
 import android.view.View
@@ -10,6 +16,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
+
 
 class ShazNumberInputView @JvmOverloads constructor(
     context: Context, attr: AttributeSet? = null, def: Int = 0
@@ -25,6 +32,11 @@ class ShazNumberInputView @JvmOverloads constructor(
     private var type: Int = 0
     private var allowNegativeValue: Boolean = false
     private var defaultValue: String? = "0"
+    private var titleTextSize: Int = 16
+    private var numberTextSize: Int = 22
+    private var strokeWidth: Int = 3
+    private var strokeRadius: Int = 3
+    private var strokeColor: Int = Color.GRAY
 
     init {
         init(attr)
@@ -46,6 +58,21 @@ class ShazNumberInputView @JvmOverloads constructor(
             minValue = ta.getInteger(R.styleable.ShazNumberInputView_minValue, 0)
             title = ta.getString(R.styleable.ShazNumberInputView_title)
             allowNegativeValue = ta.getBoolean(R.styleable.ShazNumberInputView_allowNegativeValues,false)
+            titleTextSize = ta.getDimensionPixelSize(R.styleable.ShazNumberInputView_titleTextSize,16)
+            numberTextSize = ta.getDimensionPixelSize(R.styleable.ShazNumberInputView_numberTextSize,22)
+            strokeWidth = ta.getDimensionPixelSize(R.styleable.ShazNumberInputView_strokeWidth,3)
+            strokeColor = ta.getColor(R.styleable.ShazNumberInputView_strokeColor,0xffffff)
+            strokeRadius = ta.getDimensionPixelSize(R.styleable.ShazNumberInputView_strokeRadius,3)
+
+            // set stroke values & apply stroke
+            val border = GradientDrawable()
+            border.cornerRadius = strokeRadius.toFloat()
+            border.setStroke(strokeWidth,strokeColor)
+            this.background = border
+
+            // set size
+            titleTV.textSize = titleTextSize.toFloat()
+            editText.textSize = numberTextSize.toFloat()
 
             // setting title
             if (title.isNullOrEmpty()){
@@ -79,6 +106,7 @@ class ShazNumberInputView @JvmOverloads constructor(
         // set type & validation
         setTypeAndValidation(type)
     }
+
 
     /**
      * Setting up validations & type

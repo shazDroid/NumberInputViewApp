@@ -14,7 +14,12 @@
         app:minValue="20"
         app:maxValue="100"
         app:valueType="point"
-        app:defaultValue="10"/>
+        app:defaultValue="10"
+        app:titleTextSize="10sp"
+        app:numberTextSize="14sp"
+        app:strokeWidth="3dp"
+        app:strokeRadius="7dp"
+        app:strokeColor="#E8E8E8"/>
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>

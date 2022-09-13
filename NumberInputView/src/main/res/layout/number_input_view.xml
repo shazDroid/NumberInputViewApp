@@ -2,10 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:minWidth="60dp"
     android:layout_height="wrap_content"
-    android:background="@drawable/outer_border_edit_text"
     android:clipChildren="false">
 
     <TextView
@@ -16,7 +15,7 @@
         android:paddingTop="4dp"
         android:paddingRight="8dp"
         android:text="Height"
-        android:textSize="9.2sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,7 +29,7 @@
         android:paddingRight="16dp"
         android:paddingBottom="2dp"
         android:text="0"
-        android:textSize="16sp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/countDecrease"
         app:layout_constraintHorizontal_bias="0.0"
@@ -41,8 +40,7 @@
         android:id="@+id/countIncrease"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:minHeight="20dp"
-        android:minWidth="12dp"
+        android:scaleType="centerInside"
         android:src="@drawable/ic_arrow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -54,8 +52,7 @@
         android:id="@+id/countDecrease"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:minHeight="20dp"
-        android:minWidth="12dp"
+        android:scaleType="centerInside"
         android:rotation="180"
         android:src="@drawable/ic_arrow"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -63,7 +60,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/titleTv"
         app:tint="#DCDCDC"
-        app:layout_constraintTop_toBottomOf="@id/countIncrease"/>
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
