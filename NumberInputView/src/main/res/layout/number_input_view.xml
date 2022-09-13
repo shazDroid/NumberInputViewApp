@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:minWidth="60dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/outer_border_edit_text"
+    android:clipChildren="false">
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingTop="4dp"
+        android:paddingRight="8dp"
+        android:text="Height"
+        android:textSize="9.2sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:inputType="numberDecimal"
+        android:paddingLeft="8dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="2dp"
+        android:text="0"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/countDecrease"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTv" />
+
+    <ImageView
+        android:id="@+id/countIncrease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="20dp"
+        android:minWidth="12dp"
+        android:src="@drawable/ic_arrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/titleTv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#DCDCDC" />
+
+    <ImageView
+        android:id="@+id/countDecrease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="20dp"
+        android:minWidth="12dp"
+        android:rotation="180"
+        android:src="@drawable/ic_arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/titleTv"
+        app:tint="#DCDCDC"
+        app:layout_constraintTop_toBottomOf="@id/countIncrease"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

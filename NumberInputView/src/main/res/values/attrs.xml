@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ShazNumberInputView">
+        <attr name="minValue" format="integer"/>
+        <attr name="maxValue" format="integer" />
+        <attr name="step" format="float" />
+        <attr name="title" format="string" />
+        <attr name="allowNegativeValues" format="boolean"/>
+        <attr name="valueType" format="enum">
+            <enum name="whole" value="0" />
+            <enum name="point" value="1" />
+        </attr>
+        <attr name="defaultValue" format="string"/>
+    </declare-styleable>
+</resources>

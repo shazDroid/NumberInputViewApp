@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NumberInputViewApp.iml" filepath="$PROJECT_DIR$/.idea/modules/NumberInputViewApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NumberInputView/NumberInputViewApp.NumberInputView.iml" filepath="$PROJECT_DIR$/.idea/modules/NumberInputView/NumberInputViewApp.NumberInputView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NumberInputView/NumberInputViewApp.NumberInputView.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/NumberInputView/NumberInputViewApp.NumberInputView.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NumberInputView/NumberInputViewApp.NumberInputView.main.iml" filepath="$PROJECT_DIR$/.idea/modules/NumberInputView/NumberInputViewApp.NumberInputView.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NumberInputView/NumberInputViewApp.NumberInputView.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/NumberInputView/NumberInputViewApp.NumberInputView.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NumberInputViewApp.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NumberInputViewApp.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NumberInputViewApp.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NumberInputViewApp.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NumberInputViewApp.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NumberInputViewApp.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NumberInputViewApp.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NumberInputViewApp.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>
